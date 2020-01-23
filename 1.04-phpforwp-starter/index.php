@@ -18,11 +18,18 @@
     <?php
 
       // Create an array of post objects using the display_post function
-
+      $post_tit = ["Salut World",
+          "Salut PHP",
+          "Salut WP"
+      ];
 
       // Loop through array of posts and display each one on the page
+      foreach($post_tit as $post_title) {
+      // Call the display_title function and pass it the post_title
+        display_title($post_title);
 
-        // Call the display_title function and pass it the $post
+      }
+
 
 
       /**
@@ -32,8 +39,8 @@
        */
       function display_title( $title ) {
 
-        // Echo an <h3> tag with the $title inside
-
+        // Echo   <h3> tag with the $title inside
+        echo "<h3>$title</h3>";
       }
 
     ?>
